@@ -1,28 +1,28 @@
 import { Stack } from "expo-router";
-import { useFonts } from 'expo-font'
-import * as SplashScreen from 'expo-splash-screen'
+import { useFonts } from "expo-font";
+import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const [loaded, error] = useFonts ({
-    'SOLARSPACEDEMO-Regular': require('../assets/fonts/SOLARSPACEDEMO-Regular.otf'),
-    'SPACEMISSION': require('../assets/fonts/SPACEMISSION.otf')
+  const [loaded, error] = useFonts({
+    "SOLARSPACEDEMO-Regular": require("../assets/fonts/SOLARSPACEDEMO-Regular.otf"),
+    SPACEMISSION: require("../assets/fonts/SPACEMISSION.otf"),
   });
 
-  useEffect(()=> {
+  useEffect(() => {
     if (loaded || error) {
       SplashScreen.hideAsync();
     }
-  }, [loaded, error])
-  
+  }, [loaded, error]);
+
   if (!loaded && !error) {
-    return null
+    return null;
   }
 
   return (
-    <Stack>
+    <Stack screenOptions={{ headerShown: false }}>
       <Stack.Screen name="index" />
     </Stack>
   );
