@@ -1,50 +1,76 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# App Mobile Cod3r
 
-## Get started
+Este repositório contém o código de uma aplicação mobile desenvolvida como parte do curso Cod3r, utilizando as melhores práticas de desenvolvimento mobile.
 
-1. Install dependencies
+## 📱 Tecnologias Utilizadas
+
+- **React Native**: Framework para desenvolvimento de aplicações móveis nativas para Android e iOS.
+- **Expo**: Ferramenta que facilita o desenvolvimento e a execução de aplicativos React Native.
+- **JavaScript**: Linguagem de programação utilizada no desenvolvimento.
+- **Node.js**: Para gerenciamento de pacotes com o npm/yarn.
+
+## ⚙️ Funcionalidades
+
+- Interface de usuário moderna e responsiva
+- Integração com APIs externas
+- Navegação entre telas
+- Gerenciamento de estado (Redux ou Context API)
+- Suporte para plataformas Android e iOS
+
+## 🛠️ Como Executar o Projeto
+
+1. **Clone o repositório**:
+
+   ```bash
+   git clone https://github.com/kainamf/app-mobile-cod3r.git
+   cd app-mobile-cod3r
+   ```
+
+2. **Instale as dependências**:
+
+   Usando npm:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+   Ou usando yarn:
 
    ```bash
-    npx expo start
+   yarn install
    ```
 
-In the output, you'll find options to open the app in a
+3. **Execute o projeto**:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   Para rodar no Expo:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+   ```bash
+   expo start
+   ```
 
-## Get a fresh project
+   Ou diretamente no emulador Android/iOS:
 
-When you're ready, run:
+   ```bash
+   npm run android
+   npm run ios
+   ```
 
-```bash
-npm run reset-project
-```
+## 🚀 Como Contribuir
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+1. Faça um fork do projeto
+2. Crie uma nova branch com a sua funcionalidade (`git checkout -b feature/nova-funcionalidade`)
+3. Faça o commit das suas alterações (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Envie para o branch principal (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
 
-## Learn more
+## 📄 Licença
 
-To learn more about developing your project with Expo, look at the following resources:
+Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## ✨ Contato
 
-## Join the community
+Se tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato:
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Email: contato.kainafreitas@gmail.com
+- LinkedIn: [Kainã Freitas](https://www.linkedin.com/in/kain%C3%A3freitas/)
