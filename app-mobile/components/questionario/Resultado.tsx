@@ -23,8 +23,14 @@ export default function Resultado(props: ResultadoProps) {
 
 const styles = StyleSheet.create({
     container: {},
-    texto: {},
-    destaque: {},
+    texto: {
+        color: 'white'
+    },
+    destaque: {
+        color: 'white',
+    },
     botao: {},
-    textoBotao: {}
+    textoBotao: {
+        color: 'white'
+    }
 })
