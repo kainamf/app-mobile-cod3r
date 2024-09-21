@@ -6,6 +6,13 @@ export default function useQuestionario() {
   const [respostas, setRespostas] = useState<number[]>([]);
   const [perguntas, setPerguntas] = useState(todasAsPerguntas.slice(0, 10));
 
+  function sortearPerguntas() {
+    const perguntasEmbaralhadas = [...todasAsPerguntas]
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 10)
+        return perguntasEmbaralhadas
+  }
+
   return {
     get pergunta() {
       return perguntas[indicePergunta];
@@ -29,6 +36,7 @@ export default function useQuestionario() {
     reiniciar() {
       setIndicePergunta(0);
       setRespostas([]);
+      setPerguntas(sortearPerguntas)
     },
   };
 }
