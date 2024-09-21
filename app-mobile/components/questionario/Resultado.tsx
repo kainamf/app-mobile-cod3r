@@ -22,14 +22,27 @@ export default function Resultado(props: ResultadoProps) {
 }
 
 const styles = StyleSheet.create({
-    container: {},
+    container: {
+        alignItems: 'center',
+        backgroundColor: 'black',
+        padding: 15
+    },
     texto: {
-        color: 'white'
+        color: '#bbb',
+        fontSize: 20,
     },
     destaque: {
         color: 'white',
+        fontSize: 60,
+        fontWeight: '900'
     },
-    botao: {},
+    botao: {
+        marginTop: 20,
+        backgroundColor: '#2E9D48',
+        paddingVertical: 10,
+        paddingHorizontal: 20,
+        borderRadius: 10,
+    },
     textoBotao: {
         color: 'white'
     }
